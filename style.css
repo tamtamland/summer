@@ -1,0 +1,536 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body {
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+   
+    
+}
+
+
+header h1{
+    font-size: 30px;
+    padding: 19px;
+    margin-right: 400px;
+}
+main{
+padding: 30px;
+}
+nav{
+    background-color: rgb(76, 118, 172);
+    color: #000;
+    text-align: center;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+.menu li{
+    width: calc(100vw/4);
+    position: relative;
+    background-color: #2896d1;
+    /* 動きと関係 ,横幅4等分*/ 
+    }
+.menu li a{
+    display: block;
+    padding: 10px;
+    color: #fff;
+}
+.menu li a:hover{
+    background-color: #56c5ee;
+
+}
+.submenu li a:hover{
+    background-color: #2896d1;
+}
+.submenu{
+    position: absolute;
+    display: none;
+    z-index: 3;
+}
+
+/* menuの横の下向きボタンの設定 */
+.btn{
+
+    position: relative;
+}
+
+.btn::after{
+    content:'\f078';
+    /* CSSで動かす場合、code番号に(mac ¥+option) 下記書き方*/
+    font: var(--fa-font-solid);
+   
+    position: absolute;
+    top: 50%;
+    right: .5em;
+    color: #fff;
+}
+.header_top h1 img{
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    margin-right: 10px;
+    
+}
+h1{
+    font-size: 40px;
+
+}
+.header_top{
+     background-color: #ff0; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.contact {
+   
+    padding: 0;
+    padding: 14px 24px;
+    border-radius: 20px;   
+    color: #fff;
+    display: flex;   
+    list-style: none; 
+    /* ここから追記 */
+    bottom: none;
+    outline: none; 
+    cursor: pointer;
+}
+.contact_a {
+  
+    display: block;
+    color: white;
+    background-color: #13386e;
+    text-decoration: none;  
+   
+}
+.contact_b{
+    display: block;
+     background-color: #f00; 
+    text-decoration: none;   
+}
+.contact_a:hover{
+    background-color: #fff;
+    
+    box-shadow: 0px 0px 10px #13386e;
+    transform:scale(1.1);
+    transition: 0.8s;
+}
+.contact_a:hover{
+    color: #13386e;
+}
+.contact_b:hover{
+    background-color: #fff;
+    
+    box-shadow: 0px 0px 10px #f00;
+    transform:scale(1.1);
+    transition: 0.8s;
+}
+.contact_b:hover{
+    color: #f00;
+}
+
+
+nav ul li a{
+    display: flex;
+    
+}
+
+
+.header_contact{
+    display: flex;
+    
+
+}
+.phone{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.time{
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+.hero  img{
+    
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    background-position: right bottom ;
+    min-width: 100%;
+    text-decoration: none;
+    padding-top: 50px;
+    list-style: none;
+    object-fit: cover;
+    
+    z-index: 1;
+    
+
+}
+
+.support img{
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+   
+    border: 3px dotted #000 ;
+    border-radius: 15%;
+    box-shadow: 5px 5px 5px #2896d1;
+  }
+
+.contact_b{
+    list-style: none;
+    text-decoration: none;
+    font-style:bald;   
+}
+
+
+.message{
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.message h2{
+    font-size: 40px;
+    font-style: bald;
+    margin-bottom: 15px;
+ }
+
+.box{
+   
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    
+    
+    
+}
+.box img{
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    background-color: rgba(96, 142, 221, 0.646);
+    border-radius: 15%;
+    margin-bottom: 20px;
+    text-decoration:
+     underline double #000 2px; 
+  }
+  .box_a{   
+     display: flex;
+    margin: 0 auto;
+    width: 800px;  
+    /* margin-right: 10%; */
+    margin-bottom: 25px;
+    
+    
+  }
+  .box_a p{
+    padding: 0 20px;
+    text-decoration:
+    underline #000 2px; 
+
+  }
+  .box_b{   
+    display: flex;
+   margin: 0 auto;
+   width: 800px;  
+   /* margin-right: 10%; */
+   margin-bottom: 25px;
+   text-decoration:
+    underline #000 2px;   
+ }
+ .box_b p{
+    padding: 0 20px;
+ }
+
+.support h2{
+ font-size: 30px;  
+ text-align: center;
+ padding-top: 30px;
+ font-size: bald;
+ text-decoration: 
+ underline wavy #f00 2px;
+ padding-bottom: 25px;
+
+}
+.supporter_a{
+    
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    
+    
+}
+.supporter_b{
+    
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 40px; 
+    }
+    .icon p{
+        margin-top: 15px;
+    }
+    .support h3{
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    
+ .free{ 
+    background-color: red;
+    color:#fff;
+    width: 180px;
+    height: 50px;
+    border: none;
+    outline: none;
+    text-align: center;
+    margin: 0 auto;
+     padding: 5px;
+    border-radius: 15px;
+    display: block; 
+}
+
+section .advice {
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 25px;
+        font-size: 25px;
+        padding: 10px 20px;
+        text-align: center;          
+        color: #fff;
+       
+        list-style: none; 
+        width: 150px ;
+        margin: 0 auto; 
+    }
+    
+.free:hover{
+        background-color: #fff; 
+        box-shadow: 0px 0px 10px #f00;
+        transform:scale(1.1);
+        transition: 0.8s;
+    }
+    .free:hover a{
+        color: #f00;
+
+    }
+    .support.icon{
+        flex-wrap: wrap;
+    }
+   
+    .small{
+        width: 100%;
+
+        cursor: pointer;
+        transition: 0.9s;
+
+    }
+    
+   
+        .small:hover{
+            background-color: #f00;
+        transform: rotateY(360deg);
+    } 
+
+.consul h2{
+    width: 500px;
+    font-size: 25px;
+      
+       margin: 20 auto; 
+       text-align: center; 
+}
+h2{
+    margin: 20px  auto ;
+}
+   
+    .consul p{
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    .consul h3{
+        font-size: 17px;
+        text-decoration: 
+        underline wavy #ff0 2px;
+        
+    }
+
+    .footer__contact h1 img{
+        width: 25px;
+        height: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+        
+        
+    }
+    .footer__contact h1{
+        font-size: 25px;
+        text-decoration: none;
+        list-style: none;
+        padding-bottom: 10px;
+    
+    }
+    .footer__contact p{
+        text-align: left;
+        
+      
+        padding-left: 3em;
+        padding-bottom: 0.5em;
+    }
+     h4{
+        margin-left: 50px;
+        font-size: 15px;
+        padding-bottom: 15px;
+
+    }
+    .button{
+        margin-bottom: 20px;
+    }
+
+    footer .button{
+        color: white;
+        background-color: #13386e; 
+        text-decoration: none;  
+        border: none;
+        outline: none;
+        border-radius: 15px;      
+        margin-left: 50px;
+        line-height: 2em;
+        width: 150px;
+       text-align: center;
+       padding: 7px;
+       cursor: pointer;
+    }
+
+    footer .button_link  a{
+        width: 150px;
+        line-height: 2em;
+        display: inline-block; 
+        list-style: none;                  
+        width: 150px; 
+        color: #fff; 
+        display: block;               
+        } 
+
+    .button:hover{
+        background-color: #fff;
+        font-style: bald;
+        box-shadow:0px 0px 10px #2896d1;
+        transform: scale(1.1);
+        transition: 0.8s;
+    }
+    .button:hover a{
+        color: #2896d1;
+
+    } 
+
+.footer__copy small a{
+   
+    font-size: 30px;
+   display: flex;
+   margin: 10px;  
+}
+.footer__copy p{
+    font-size: 23px;
+    text-align: center; 
+   
+    padding: 30px; 
+}
+footer p{
+    text-align: center;
+    
+}
+    
+
+
+@media screen and (max-width: 1258px){
+        .header_contact .time,.contact {display:none}
+
+        .header_top h1{
+            margin: 0 auto;
+        }
+        }
+@media (max-width:1040px){         
+.hero  img{
+    width: 100%;
+    height: auto;
+}
+}
+
+@media (max-width:768px){
+    nav ul li a{
+        font-size: 12px;
+       
+    }
+    
+.header_top h1{
+font-size: 20px;
+        
+}
+.header_top h1 img{
+    width: 25px;
+    height: 25px;
+}
+.supporter_a{
+    
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.supporter_b{
+    
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.box_a{
+    width: 350px;
+    
+   text-align: center;
+   
+    
+}
+.box_b{  
+    width: 370px;
+    text-align: center; 
+
+}
+.box{
+    
+    padding: auto;
+}
+.consul h2{
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.footer{
+    display: block;
+    max-width: 360px;
+    /* footer幅ihSE幅に合わせたら全体の幅がおさまった */
+}
+        
+
+}
+
+
+
+
+
+
+
+    
+
+
+
+
+
